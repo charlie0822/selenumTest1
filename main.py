@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 driver = webdriver.Chrome("C:/Users/JC/Desktop/chromedriver.exe")
 
 driver.get("https://www.fiercepharma.com/")
-elements = driver.find_elements(By.XPATH,'//a[contains(text(),"COVID")]')
+elements = driver.find_elements(By.XPATH,'//a[contains(text(),"CEO")]')
 
 for element in elements:
     print(element.text+'\n')
